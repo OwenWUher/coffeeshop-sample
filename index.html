@@ -1001,6 +1001,12 @@
       color: rgba(245, 237, 214, 0.25);
     }
 
+    .link-disabled {
+      pointer-events: none;
+      cursor: default;
+      opacity: 0.45;
+    }
+
     /* ===== FADE-IN ANIMATION ===== */
     .fi {
       opacity: 0;
@@ -1127,14 +1133,14 @@
 
       <div class="about-visual fi">
         <div class="about-img-main">
-          <img src="https://picsum.photos/seed/barista99/700/880" alt="Our barista crafting a pour-over">
+          <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=700&h=880&fit=crop&q=80" alt="Our barista crafting a pour-over">
         </div>
         <div class="about-badge">
           <span class="num">5★</span>
           <span class="lbl">Rated</span>
         </div>
         <div class="about-img-accent">
-          <img src="https://picsum.photos/seed/latteart22/450/450" alt="Close-up of latte art">
+          <img src="https://images.unsplash.com/photo-1497515114629-f71d768fd07c?w=450&h=450&fit=crop&q=80" alt="Close-up of latte art">
         </div>
       </div>
 
@@ -1338,12 +1344,12 @@
       <h2 class="section-title">A Place Worth <em>Staying</em></h2>
     </div>
     <div class="gallery-grid">
-      <div class="g-item fi"><img src="https://picsum.photos/seed/cafeint1/800/900"   alt="Warm café interior with natural light"></div>
-      <div class="g-item fi"><img src="https://picsum.photos/seed/latte44/600/440"    alt="Latte art rosetta"></div>
-      <div class="g-item fi"><img src="https://picsum.photos/seed/pastry11/500/380"   alt="Fresh pastries on display"></div>
-      <div class="g-item fi"><img src="https://picsum.photos/seed/roast55/500/380"    alt="Coffee beans roasting"></div>
-      <div class="g-item fi"><img src="https://picsum.photos/seed/espresso33/600/440" alt="Espresso being pulled"></div>
-      <div class="g-item fi"><img src="https://picsum.photos/seed/cozyseats/800/440"  alt="Cozy reading nook with armchairs"></div>
+      <div class="g-item fi"><img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&h=900&fit=crop&q=80"  alt="Warm café interior with natural light"></div>
+      <div class="g-item fi"><img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=600&h=440&fit=crop&q=80" alt="Latte art rosetta"></div>
+      <div class="g-item fi"><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=500&h=380&fit=crop&q=80"  alt="Fresh pastries on display"></div>
+      <div class="g-item fi"><img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=500&h=380&fit=crop&q=80"  alt="Coffee beans roasting"></div>
+      <div class="g-item fi"><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&h=440&fit=crop&q=80" alt="Espresso being pulled"></div>
+      <div class="g-item fi"><img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=800&h=440&fit=crop&q=80"  alt="Cozy reading nook with armchairs"></div>
     </div>
   </section>
 
@@ -1381,7 +1387,7 @@
             <strong>123 Maple Street</strong>
             <span>Downtown · Your City, ST 00000</span>
           </div>
-          <a href="#" class="map-open-link">Open in Maps →</a>
+          <span class="map-open-link link-disabled">Open in Maps →</span>
         </div>
         <div class="loc-items">
           <div class="loc-item">
@@ -1421,10 +1427,10 @@
         <h2 class="section-title">We'd Love to<br>Hear From <em>You</em></h2>
         <p>Curious about private events, catering, wholesale beans, or just want to say hi? We read every message and usually respond within 24 hours.</p>
         <div class="social-row">
-          <a href="#" class="soc-btn" aria-label="Instagram">📷</a>
-          <a href="#" class="soc-btn" aria-label="Facebook">📘</a>
-          <a href="#" class="soc-btn" aria-label="TikTok">🎵</a>
-          <a href="#" class="soc-btn" aria-label="Email">✉️</a>
+          <span class="soc-btn link-disabled" aria-label="Instagram">📷</span>
+          <span class="soc-btn link-disabled" aria-label="Facebook">📘</span>
+          <span class="soc-btn link-disabled" aria-label="TikTok">🎵</span>
+          <span class="soc-btn link-disabled" aria-label="Email">✉️</span>
         </div>
       </div>
 
@@ -1463,9 +1469,9 @@
         <div class="footer-brand-logo">COFFEENAME</div>
         <p>Artisan coffee, handcrafted with intention. A neighborhood staple since 2019.</p>
         <div class="footer-social">
-          <a href="#" class="footer-soc" aria-label="Instagram">📷</a>
-          <a href="#" class="footer-soc" aria-label="Facebook">📘</a>
-          <a href="#" class="footer-soc" aria-label="TikTok">🎵</a>
+          <span class="footer-soc link-disabled" aria-label="Instagram">📷</span>
+          <span class="footer-soc link-disabled" aria-label="Facebook">📘</span>
+          <span class="footer-soc link-disabled" aria-label="TikTok">🎵</span>
         </div>
       </div>
       <div class="footer-col">
@@ -1480,25 +1486,26 @@
       <div class="footer-col">
         <h4>Services</h4>
         <ul>
-          <li><a href="#">Private Events</a></li>
-          <li><a href="#">Catering</a></li>
-          <li><a href="#">Wholesale Beans</a></li>
-          <li><a href="#">Gift Cards</a></li>
+          <li><span class="link-disabled" style="font-size:0.875rem;color:rgba(245,237,214,0.45);">Private Events</span></li>
+          <li><span class="link-disabled" style="font-size:0.875rem;color:rgba(245,237,214,0.45);">Catering</span></li>
+          <li><span class="link-disabled" style="font-size:0.875rem;color:rgba(245,237,214,0.45);">Wholesale Beans</span></li>
+          <li><span class="link-disabled" style="font-size:0.875rem;color:rgba(245,237,214,0.45);">Gift Cards</span></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Visit</h4>
         <ul>
-          <li><a href="#">123 Maple Street</a></li>
-          <li><a href="#">Downtown District</a></li>
-          <li><a href="#">(555) 123-4567</a></li>
-          <li><a href="#">hello@coffeename.com</a></li>
+          <li><span style="font-size:0.875rem;color:rgba(245,237,214,0.45);">123 Maple Street</span></li>
+          <li><span style="font-size:0.875rem;color:rgba(245,237,214,0.45);">Downtown District</span></li>
+          <li><span style="font-size:0.875rem;color:rgba(245,237,214,0.45);">(555) 123-4567</span></li>
+          <li><span style="font-size:0.875rem;color:rgba(245,237,214,0.45);">hello@coffeename.com</span></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
       <p>&copy; 2025 COFFEENAME. All rights reserved.</p>
       <p>Made with ☕ in Your City</p>
+      <p>Created by <a href="https://outscopedesigns.com" target="_blank" rel="noopener noreferrer" style="color:rgba(245,237,214,0.45);text-decoration:underline;transition:color 0.3s;" onmouseover="this.style.color='var(--caramel)'" onmouseout="this.style.color='rgba(245,237,214,0.45)'">OutScope Designs</a></p>
     </div>
   </footer>
 
